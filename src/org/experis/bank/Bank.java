@@ -24,11 +24,13 @@ public class Bank {
             switch (select){
                 case 1 :
                     System.out.println("how much you want to withdraw?");
+                    double amountWithdraw = Double.parseDouble(scan.nextLine());
+                    account1.withdrawBudget(amountWithdraw);
                     break;
                     case 2 :
                     System.out.println("how much you want to deposit?");
-                    double amount = scan.nextDouble();
-                    account1.addBudget(amount);
+                    double amountDeposit = Double.parseDouble(scan.nextLine());
+                    account1.addBudget(amountDeposit);
                     break;
                     case 3 :
                     System.out.println("logout");

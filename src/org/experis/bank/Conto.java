@@ -22,13 +22,20 @@ public class Conto {
     // Methods
     public String getUtentName(){
         return utentName;
-    }  public double getBalance(){
-        return balance;
+    }  public String getBalance(){
+        return String.format("%.2f",balance)+"€";
     }
 
     public double addBudget(double amount){
         return balance += amount;
     }
-
-
+    public double withdrawBudget(double amount){
+        double withdraw = balance - amount;
+        if (withdraw < 0){
+            System.out.println("Insufficient funds for the withdrawal of " +  String.format("%.2f",amount)+"€");
+        }else {
+            balance = withdraw;
+        }
+        return balance;
+    }
 }
