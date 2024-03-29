@@ -32,7 +32,7 @@ public class Conto {
     public double withdrawBudget(double amount){
         double withdraw = balance - amount;
         if (withdraw < 0){
-            System.out.println("Insufficient funds for the withdrawal of " +  String.format("%.2f",amount)+"€");
+            System.out.println("Insufficient funds for the withdraw of " +  String.format("%.2f",amount)+"€");
         }else {
             balance = withdraw;
         }
