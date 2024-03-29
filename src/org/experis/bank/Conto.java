@@ -22,8 +22,9 @@ public class Conto {
     // Methods
     public String getUtentName(){
         return utentName;
-    }  public String getBalance(){
-        return String.format("%.2f",balance)+"€";
+    }
+    public double getBalance(){
+        return balance;
     }
 
     public double addBudget(double amount){

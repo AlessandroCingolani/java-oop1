@@ -15,7 +15,7 @@ public class Bank {
         boolean isLogged = true;
         do {
             // chiedo azione all utente
-            System.out.println("Your balance: " + account1.getBalance());
+            System.out.println("Your balance: " + String.format("%.2f",account1.getBalance())+"€" );
             System.out.println("Choose operation:");
             System.out.println("Press 1 to withdraw");
             System.out.println("Press 2 to deposit");
