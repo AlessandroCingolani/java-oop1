@@ -24,16 +24,13 @@ public class Prodotto {
     }
 
     //methods
-    public String basePrice(){
-        String formattedPrice = String.format("%.2f",price);
-        return formattedPrice +"€";
+    public double basePrice(){
+        return price ;
     }
 
-    public String priceWithIva(){
+    public double priceWithIva(){
         double importIva = price * (iva/100.0);
-        double priceIva =  price + importIva;
-        String formattedPrice = String.format("%.2f",priceIva);
-        return formattedPrice +"€";
+        return price + importIva;
     }
 
     public String codeName (){
