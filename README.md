@@ -6,6 +6,7 @@ Un prodotto è caratterizzato da:
 - descrizione
 - prezzo
 - iva
+- 
 Alla creazione di un nuovo prodotto il codice deve essere valorizzato con un numero random di massimo 8 cifre.
 Il prodotto espone sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva.
 Il prodotto espone anche un metodo per avere il nome esteso, ottenuto concatenando codice-nome: se il codice è inferiore a 8 cifre fa inserito un pad left di 0.
@@ -15,6 +16,7 @@ Creare la classe Conto caratterizzata da:
 - numero di conto
 - nome del proprietario
 - saldo
+
 Inoltre la classe deve esporre
 un metodo per versare una somma di denaro sul conto
 uno per prelevare una somma di denaro dal conto (attenzione: il saldo non può mai diventare negativo)
